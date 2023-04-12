@@ -1,35 +1,35 @@
 
-.Home{
+.Home2{
     display: flex;
     background-color: rgb(4, 29, 94);
     width: 100%;
     padding: 20px 5px;
 }
-.Home-container{
+.Home2-container{
     display: flex;
     flex-direction: row;
     margin: 100px;
     padding-top: 20px;
 }
 
-.Home-container-textarea{
+.Home2-container-textarea{
     text-align: center;
     align-items: center;
     margin: auto;
 }
 
-.Home-container-textarea h1{
+.Home2-container-textarea h1{
     font-size: 2.5vw;
     margin-bottom: 25px;
     color: white;
 }
-.Home-container-textarea p{
-    font-size: 1vw;
+.Home2-container-textarea p{
+    font-size: 1.5vw;
     color: white;
 }
 
 
-.Home-container img{
+.Home2-container img{
     width: 50vw;
     height: auto;
     border-radius: 10px;
