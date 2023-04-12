@@ -7,3 +7,9 @@
 body{
     background-color: rebeccapurple;
 }
+
+.header{
+    background-color: red;
+    width: 100vw;
+    height: auto;
+}
