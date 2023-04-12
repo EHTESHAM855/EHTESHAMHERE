@@ -34,3 +34,8 @@
     height: auto;
     border-radius: 10px;
 }
+@media(min-width:900px){
+    .Home2-container img{
+        margin-left: 20px;
+    }
+}

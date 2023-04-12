@@ -1,10 +1,10 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["hard", "fun", "a journey", "LIFE"];
-const typingDelay = 200;
+const textArray = ["Hi there, I'm a web developer with a passion for building beautiful and functional websites.", "Hey, I'm a front-end developer who loves creating intuitive and user-friendly web applications.", "Greetings, I'm a full-stack developer with expertise in multiple programming languages and frameworks.", "Hello, I'm a web developer who is passionate about creating dynamic and engaging online experiences."];
+const typingDelay = 100;
 const erasingDelay = 100;
-const newTextDelay = 500; // Delay between current and next text
+const newTextDelay = 100; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 

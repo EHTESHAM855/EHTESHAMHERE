@@ -1,0 +1,28 @@
+.about-me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.about-textarea{
+    align-items: center;
+    text-align: justify;
+    color: aliceblue;
+    margin: 20px 0px;
+}
+
+.about-textarea h1{
+    font-size: 3vw;
+    margin-bottom: 25px;
+}
+.about-textarea p{
+    font-size: 1.2vw;
+}
+
+.me-img img{
+    width: 4vw;
+    height: auto;
+}

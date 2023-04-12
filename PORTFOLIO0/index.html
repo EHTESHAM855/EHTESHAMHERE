@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehtesham's Here</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<!-- First section -->
+<section>
+    <div class="name">Ehtesham</div>
+  </section>
+
+  <!-- Second section -->
+  <section>
+    <div class="name">Ehtesham</div>
+  </section>
+
+  <!-- Third section -->
+  <section>
+    <div class="name">Ehtesham</div>
+  </section>
+
+  <!-- Set scrolling behavior to jump directly to the next section -->
+  <script>
+    const easeInOutCubic = function (t) {
+      return t < 0.6
+        ? 4 * t * t * t
+        : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+    };
+
+    let currentSection = 1;
+    let isScrolling = false;
+
+    const scrollEasing = function (distance, duration) {
+      if (!isScrolling) {
+        isScrolling = true;
+        const scrollHeight = window.scrollY;
+        let start = null;
+
+        const step = function (timestamp) {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
+          const increment = progress / duration;
+          const easing = easeInOutCubic(increment > 1 ? 1 : increment);
+          window.scrollTo(0, scrollHeight + distance * easing);
+          if (progress < duration) {
+            window.requestAnimationFrame(step);
+          } else {
+            isScrolling = false;
+          }
+        };
+
+        window.requestAnimationFrame(step);
+
+        if (distance > 0) {
+          currentSection++;
+        } else {
+          currentSection--;
+        }
+
+        if (currentSection > 3) {
+          currentSection = 3;
+        } else if (currentSection < 1) {
+          currentSection = 1;
+        }
+
+        const currentName = document.querySelector(
+          `section:nth-of-type(${currentSection}) .name`
+        );
+        currentName.classList.add("active");
+        setTimeout(function () {
+          currentName.classList.remove("active");
+        }, 2000);
+      }
+    };document.addEventListener("wheel", function (event) {
+    event.preventDefault();
+    const direction = Math.sign(event.deltaY);
+    scrollEasing(direction * window.innerHeight, 1000);
+  });
+</script>
+
+</body>
+</html>
