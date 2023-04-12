@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: cursive;
 }
 
 body{
@@ -9,8 +10,105 @@ body{
 }
 
 .header{
-    background-color: red;
+    background-color: transparent;
     width: 100vw;
     height: auto;
 }
+
+.header-message{
+    background-color: aliceblue;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.header-message h3{
+    font-size: x-large;
+    color: rgb(174, 82, 255);
+    margin-left: 5px;
+    display: flex;
+    flex: 1;
+}
+
+.header-message span{
+    display: flex;
+    flex: 0 0 auto;
+    /* margin-right: 5px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    padding: 5px 10px;
+    z-index: 9999;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: beige;
+
+}
+.header-message span:hover{
+    color: red;
+    font-size: 110%;
+    background-color: black;
+    box-shadow: 2px 2px 10px 1px red;
+}
+
+
+
+
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    width: 99.9vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-navbar-logo{
+    flex: 1;
+    cursor: pointer;
+}
+
+.header-navbar-menu{
+    display: flex;
+    flex: 0 0 auto;
+    margin-right: 0;
+}
+
+
+.header-navbar-menu ul{
+    text-align: center;
+    list-style: none;
+}
+
+.header-navbar-menu li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-navbar-menu li a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4vw;
+}
+
+.header-navbar-menu li a:hover{
+    color: rgb(252, 20, 20);
+    font-size: 150%;
+}
+
+
+
+
+
+
+
+
 
