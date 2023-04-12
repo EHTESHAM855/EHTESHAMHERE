@@ -1,7 +1,7 @@
 .floating-message {
-    animation: float 5s linear infinite;
+    animation: float 10s linear infinite;
     white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-overflow: ellipsis;
     
     font-size: auto;
@@ -9,9 +9,9 @@
   
   @keyframes float {
     from {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
     }
     to {
-      transform: translateX(100%);
+      transform: translateX(180%);
     }
   }

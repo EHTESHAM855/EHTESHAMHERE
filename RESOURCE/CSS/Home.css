@@ -1,0 +1,29 @@
+
+.Home{
+    display: flex;
+    background-color: rgb(4, 29, 94);
+    width: 100%;
+    padding: 20px 5px;
+}
+.Home-container{
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    padding-top: 20px;
+}
+
+.Home-container-textarea{
+    text-align: center;
+    align-items: center;
+}
+
+.Home-container-textarea h1{
+    font-size: 2.5vw;
+}
+
+
+.Home-container img{
+    width: 50vw;
+    height: auto;
+    border-radius: 10px;
+}

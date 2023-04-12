@@ -3,26 +3,33 @@
     margin: 0;
     padding: 0;
     font-family: cursive;
+    /* outline: 1px solid red; */
 }
 
 body{
-    background-color: rebeccapurple;
+    background-color: rgb(229, 217, 240);
+    height: 2000px;
 }
 
 .header{
     background-color: transparent;
-    width: 100vw;
+    width: 100%;
     height: auto;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 1px 10px 2px rgb(245, 162, 162);
 }
 
 .header-message{
+    width: 100%;
     background-color: aliceblue;
-    width: 100vw;
     display: flex;
     flex-direction: row;
     padding: 5px;
     z-index: 9999;
     overflow: hidden;
+    box-shadow: 1px 1px 10px 1px rgb(96, 95, 95);
+    border: 1px solid rgb(242, 129, 253);
 }
 
 .header-message h3{
@@ -36,7 +43,6 @@ body{
 .header-message span{
     display: flex;
     flex: 0 0 auto;
-    /* margin-right: 5px; */
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
@@ -58,25 +64,30 @@ body{
 
 
 
+
+
 .navbar{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: transparent;
-    width: 99.9vw;
+    background-color: white;
+    /* width: 99.9vw; */
     height: auto;
     display: flex;
     flex-direction: row;
 }
 
 .header-navbar-logo{
-    flex: 1;
+    /* flex: 1; */
+    margin-right: auto;
+}
+.header-navbar-logo h1{
     cursor: pointer;
 }
 
 .header-navbar-menu{
     display: flex;
-    flex: 0 0 auto;
+    /* flex: 0 0 auto; */
     margin-right: 0;
 }
 
