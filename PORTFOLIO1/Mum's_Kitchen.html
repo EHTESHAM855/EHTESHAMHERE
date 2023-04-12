@@ -1,0 +1,2747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mum's Kitchen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        .core-values- {
+            margin: 2vw 0;
+        }
+        html{
+            /* scroll-behavior: 5s; */
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        html section#Home,
+        section#about-us,
+        section.core-values,
+        section.main-menu,
+        section#team,
+        div.review-section,
+        section.ehtesham-Subscribe,
+        section.contact-us,
+        section#Find_us {
+            margin-bottom: 5vw;
+            border-radius: 10px;
+        }
+
+        .core-values:hover,
+        .about-us:hover,
+        .main-menu:hover,
+        #team:hover,
+        .review-section:hover,
+        .ehtesham-Subscribe:hover,
+        .contact-us:hover {
+            box-shadow: 1px 1px 40px 1px black;
+        }
+
+        @media(max-width:500px) {
+
+            html section#Home,
+            section#about-us,
+            section.core-values,
+            section.main-menu,
+            section#team,
+            div.review-section,
+            section.ehtesham-Subscribe,
+            section.contact-us,
+            section#Find_us {
+                margin-bottom: 15vw;
+            }
+        }
+
+        /* STYLE FOR HEADER STARTS HERE  */
+        body {
+            background-color: #ffffff;
+            /* height: 2000px; */
+        }
+
+        .logo {
+            margin-right: 36vw;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: xx-large;
+            margin-left: 5vw;
+        }
+
+        .logo-small {
+            display: none;
+        }
+
+        header {
+            float: left;
+            display: flex;
+            justify-content: space-between;
+            color: black;
+            background-color: rgb(232, 232, 248);
+            box-shadow: 1px 1px 30px 1px black;
+            margin: 0;
+            margin-bottom: 10px;
+            position: fixed;
+            top: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            left: 0;
+            width: 100vw;
+            z-index: 9999;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            color: black;
+            padding: 10px;
+            margin: 0px;
+            padding-left: 10px;
+        }
+
+        .options {
+            margin-left: 6px;
+            font-size: 1.2rem;
+        }
+
+        .options:hover {
+            border: 0.5px solid red;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-radius: 10px;
+            box-shadow: 2px 2px 25px rgb(252, 149, 76);
+            padding: 2px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .hamburger {
+            display: none;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bar {
+            display: block;
+            width: 20px;
+            height: 2px;
+            margin: 5px auto;
+            background-color: #ff0000;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Set the style of the scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+            background-image:
+                linear-gradient(45deg, transparent 45%, #fff 45%),
+                linear-gradient(-45deg, transparent 45%, #fff 45%),
+                linear-gradient(135deg, transparent 45%, #fff 45%),
+                linear-gradient(-135deg, transparent 45%, #fff 45%);
+            background-position: center center;
+            background-size: 10px 10px;
+            background-repeat: no-repeat;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        @media(min-width:1900px) {
+            .logo {
+                margin-right: 50vw;
+            }
+        }
+
+        @media(max-width:1600px) {
+            .logo {
+                margin-right: 35vw;
+            }
+        }
+
+        @media(max-width:1400px) {
+            .logo {
+                margin-right: 30vw;
+            }
+        }
+
+        @media (max-width: 1300px) {
+            .logo {
+                margin-right: 15vw;
+            }
+        }
+
+        @media (max-width:1100px) {
+            .logo {
+                margin-right: 7vw;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .logo {
+                margin-right: 0vw;
+            }
+        }
+
+        @media (max-width:950px) {
+            .logo {
+                margin-right: 0vw;
+            }
+        }
+
+        @media (max-width: 850px) {
+            nav {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            ul {
+                display: none;
+                flex-direction: row;
+                align-items: flex-start;
+                margin-top: 20px;
+            }
+
+            li {
+                margin: 10px 0;
+                flex-direction: column;
+            }
+
+            .hamburger {
+                display: block;
+                margin-left: 13px;
+            }
+
+            .show {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo-small {
+                /* margin-right: 45vw; */
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 2rem;
+                /* padding-left: 5vw; */
+                display: flex;
+                margin: 0 10px;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .small-screen-menu {
+                flex-direction: column;
+            }
+        }
+
+        .dropdown-menu {
+            left: 0;
+        }
+
+        @media(max-width:320px) {
+            .logo-small {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media(max-width:300px) {
+            .logo-small {
+                font-size: 1.3rem;
+            }
+
+            .options {
+                font-size: small;
+            }
+        }
+
+        /* STYLE FOR HEADER ENDS HERE  */
+        /* IMAGE SLIDER CSS HERE STARTS 
+*/
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100vw;
+            position: relative;
+            margin: auto;
+            margin-top: 55px;
+            /* height: 40vw; */
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 1rem;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            border: 2px solid red;
+            user-select: none;
+            background-color: rgb(234, 176, 176);
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border: 2px solid red;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit seethrough */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(92, 136, 224, 0.416);
+        }
+
+        /* Caption text */
+        .text {
+            color: black;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        .slider-image {
+            width: 100vw;
+            height: 50vw;
+        }
+
+        @media(min-width:1600px) {
+
+            .prev,
+            .next {
+                font-size: 2rem;
+            }
+        }
+
+        /* text animated css */
+        .text-animated {
+            position: absolute;
+            top: 0%;
+            text-align: center;
+            width: 100vw;
+        }
+
+        .header {
+            margin: 50px;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #header {
+            animation: slide-down 1s ease-in-out;
+            animation-fill-mode: forwards;
+            margin-top: 2vw;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 9rem;
+        }
+
+        #paragraph {
+            animation: slide-left 1s ease-in-out;
+            animation-fill-mode: forwards;
+            margin-top: 3vw;
+            font-size: 4rem;
+            color: white;
+        }
+
+        #button {
+            animation: slide-up 1s ease-in-out;
+            animation-fill-mode: forwards;
+            margin-top: 5vw;
+            font-size: 4rem;
+            background-color: rgba(255, 255, 255, 0.915);
+            border: 2px solid red;
+            cursor: pointer;
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        .slider-button {
+            text-decoration: none;
+        }
+
+        .slider-button:hover {
+            color: white;
+        }
+
+        #button:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 2px 3px 5px red;
+        }
+
+        @keyframes slide-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @keyframes slide-left {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+        }
+
+        @keyframes slide-up {
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @media(max-width:2500px) {
+            #header {
+                font-size: 7.5rem;
+            }
+
+            #paragraph {
+                font-size: 2.5rem;
+            }
+
+            #button {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media(max-width:1600px) {
+            #header {
+                font-size: 7rem;
+            }
+
+            #paragraph {
+                font-size: 2.2rem;
+            }
+
+            #button {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media(max-width:1200px) {
+            #header {
+                font-size: 6rem;
+            }
+
+            #paragraph {
+                font-size: 2rem;
+            }
+
+            #button {
+                font-size: 2rem;
+            }
+        }
+
+        @media(max-width:1000px) {
+            #header {
+                font-size: 4rem;
+            }
+
+            #paragraph {
+                font-size: 1.5rem;
+            }
+
+            #button {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media(max-width:800px) {
+            #header {
+                font-size: 3rem;
+            }
+
+            #paragraph {
+                font-size: 1.2rem;
+            }
+
+            #button {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media(max-width:650px) {
+            #header {
+                font-size: 2rem;
+            }
+
+            #paragraph {
+                font-size: 0.8rem;
+            }
+
+            #button {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media(max-width:450px) {
+            #header {
+                font-size: 1.4rem;
+            }
+
+            #paragraph {
+                font-size: 0.7rem;
+            }
+
+            #button {
+                font-size: 0.6rem;
+            }
+        }
+
+        @media(max-width:300px) {
+            #header {
+                font-size: 1rem;
+            }
+
+            #paragraph {
+                font-size: 0.5rem;
+            }
+
+            #button {
+                font-size: 0.5rem;
+            }
+        }
+
+        /* texxt animated css ends here  */
+        /* IMAGE SLIDER CSS ENDS HERE  */
+        /* ABOUT US CSS STARTS HERE  */
+        .about-us {
+            background-color: #f8ceced5;
+            padding: 80px 0;
+        }
+
+        .about-us h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .about-us p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .about-us img {
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animation */
+        .animate__animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            --animate-duration: 2.5s;
+            animation-duration: var(--animate-duration);
+        }
+
+        .animate__fadeInUp {
+            animation-name: fadeInUp;
+            animation-duration: var(--animate-duration);
+        }
+
+        .animate__fadeInRight {
+            animation-name: fadeInRight;
+            animation-duration: var(--animate-duration);
+        }
+
+        @media(min-width:1300px) {
+            .row {
+                display: flex;
+                flex-direction: row;
+                height: fit-content;
+                margin-left: 10vw;
+                margin-right: 10vw;
+            }
+        }
+
+        .col-md-6 {
+            margin-left: 20px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translate3d(100%, 0, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @media(max-width:590px) {
+            .about-us img {
+                height: fit-content;
+                width: 80vw;
+            }
+        }
+
+        /* ABOUT US CSS ENDS HERE  */
+        /* MEET OUT TEAM CSS STARTS HERE  */
+        #team {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #b8ffba;
+        }
+
+        #team-heading {
+            font-size: 3rem;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            border-radius: 20px;
+            overflow: hidden;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .card-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 280px;
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+        }
+
+        .card:hover .card-image,
+        .card:focus .card-image {
+            transform: rotateY(360deg);
+        }
+
+        .card-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            /* transform: translateY(100%); */
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover .card-details,
+        .card:focus .card-details {
+            transform: translateY(5);
+        }
+
+        .card-details h3 {
+            margin-top: 0;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .card-details p {
+            margin: 5px 0 0;
+            color: #ccc;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            overflow: hidden;
+        }
+
+        .popup-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .popup-content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 99;
+        }
+
+        /* MEET OUR TEAM CSS ENDS HERE  */
+        /* SUBSCRIBE TO OUR NEWSLETTER CSS STARTS HERE  */
+        .ehtesham-Subscribe {
+            width: 100vw;
+            padding: 10px;
+            background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU1wLB2o3UFiPpYhjfMcR_Pkm8DOd-lX4Gh43cZgoMbl39HCoF6o9jOYCkkpfRSxihdr0Ona3m3z6pgNREumarg8geJ63pUa16hLp7wmw78NgCIAoWy6HX6SQ9s8PJY-mRawpSwHkk1Mc7-SzwkHZHlHvAjjcR1mTAWcOkQ2Nq9DVMyQT0jPjk9faB/s1024/BACKGROUND.webp);
+        }
+
+        .ehtesham-sub-container {
+            display: flex;
+            flex-direction: row;
+            padding: 50px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .ehtesham-email-input-button {
+            margin-left: 20vw;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.8rem;
+        }
+
+        /* #ehtesham-email-input{
+    border-radius: 5px;
+    font-size: 2vw;
+    width: 50%;
+} */
+        /* #ehtesham-email-input-submit-button{
+    background-color: rgb(221, 59, 59);
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 5px;
+} */
+        /* #ehtesham-email-input-submit-button:hover{
+    background-color: brown;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 2px 2px 20px 2px red;
+} */
+        #ehtesham-svg-for-subscribe {
+            width: 5.5rem;
+            height: 5.5rem;
+            background-color: white;
+            border: 1.9px solid black;
+            padding: 10px;
+            border-radius: 100%;
+            margin-right: 25px;
+            cursor: pointer;
+            box-shadow: 2px 5px 25px 5px rgb(235, 120, 120);
+        }
+
+        #ehtesham-svg-for-subscribe:hover {
+            background-color: rgb(238, 150, 150);
+            color: white;
+            box-shadow: 2px 5px 25px 5px rgb(230, 236, 145);
+        }
+
+        .ehtesham-message-container {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+        }
+
+        .ehtesham-message {
+            font-size: 1.8rem;
+        }
+
+        @media(max-width:720px) {
+            .ehtesham-message {
+                font-size: 0.7vw;
+            }
+
+            .ehtesham-email-input-button {
+                flex-direction: row;
+                padding: 0;
+                margin: 0;
+            }
+
+            /* .ehtesham-email-input-button label{
+        font-size: 1rem;
+    } */
+            .ehtesham-sub-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 0;
+            }
+
+            .ehtesham-message-container {
+                flex-direction: column;
+            }
+
+            #ehtesham-svg-for-subscribe {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
+
+        @media(max-width:1020px) {
+            .ehtesham-message {
+                font-size: 2rem;
+            }
+
+            .ehtesham-email-input-button {
+                flex-direction: row;
+                padding: 0;
+                margin: 0;
+            }
+
+            .ehtesham-email-input-button label {
+                font-size: 1.8rem;
+            }
+
+            .ehtesham-sub-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 0;
+            }
+
+            .ehtesham-message-container {
+                flex-direction: column;
+            }
+        }
+
+        @media(min-width:1550px) {
+            .ehtesham-email-input-button {
+                margin-left: 35vw;
+            }
+        }
+
+        /* SUBSCRIBE TO OUR NEWSLETTER CSS ENDS HERE  */
+        /* Our CORE VALUES CSS STARTS HERE  */
+        .core-values {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            background-color: #e3eff8;
+        }
+
+        .value {
+            cursor: none;
+            width: 350px;
+            height: 350px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #cdfffd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media(min-width:1790px) {
+            .value {
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        .value:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-5px);
+        }
+
+        .value i {
+            font-size: 60px;
+            color: #e67e22;
+            margin-bottom: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .value:hover i {
+            transform: rotate(360deg);
+        }
+
+        .value h3 {
+            font-size: 24px;
+            font-weight: normal;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .value p {
+            font-size: 16px;
+            line-height: 1.4;
+            color: #666;
+        }
+
+        .value::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .value:hover::before {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .core-values- {
+            align-items: center;
+            text-align: center;
+            font-size: 2vw;
+        }
+
+        @media(max-width:1400px) {
+            .core-values- {
+                font-size: 3.5vw;
+            }
+        }
+
+        @media(max-width:1600px) {
+            .core-values- {
+                font-size: 2.5vw;
+            }
+        }
+
+        @media(max-width:400px) {
+            .core-values- {
+                font-size: 6.5vw;
+            }
+        }
+
+        @media(max-width:800px) {
+            .core-values- {
+                font-size: 6.5vw;
+            }
+        }
+
+        /* OUR CORE VALUES CSS ENDS HERE  */
+        /* MENU SECTION CSS STARTS HERE  */
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 70px;
+            padding-bottom: 10px;
+        }
+
+        .menu-item {
+            flex-basis: 22%;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(226, 210, 115, 0.1);
+            overflow: hidden;
+            position: relative;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .menu-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .menu-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .menu-item .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .menu-item h4 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #000000;
+            margin: 20px;
+            text-shadow: 0 2px 4px rgba(219, 230, 92, 0.5);
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            color: #000000;
+            margin: 0 20px 20px;
+            /* text-shadow: 0 2px 4px rgba(226, 56, 56, 0.5); */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .menu-item.more {
+            text-align: center;
+        }
+
+        .menu-item.more a {
+            display: inline-block;
+            background-color: #2d2d2d;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .menu-item.more a:hover {
+            background-color: #fff;
+            color: #2d2d2d;
+            border: 2px solid #2d2d2d;
+        }
+
+        /* #check-more-btn{
+    background-color: rgb(242, 144, 98);
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+#check-more-btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 20px 2px red;
+} */
+        .check-more-btn {
+            background-color: #000;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .check-more-btn::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            opacity: 0;
+            transition: all 0.3s ease-out;
+        }
+
+        .check-more-btn:hover::before {
+            opacity: 1;
+        }
+
+        .check-more-btn:focus {
+            outline: none;
+        }
+
+        .check-more-btn:active {
+            transform: scale(0.95);
+            box-shadow: 0px 5px 10px rgba(216, 111, 111, 0.831);
+        }
+
+        .more-menu-items {
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        @media(max-width:800px) {
+            .menu.container {
+                width: 100vw;
+                flex-direction: column;
+            }
+
+            .menu-item {
+                width: 90vw;
+                flex-basis: auto;
+            }
+
+            .menu-items {
+                flex-direction: row;
+            }
+        }
+
+        /* MENU SECTION CSS ENDS HERE  */
+        /* CUSTOMER REVIEW CSS STARTS HERE  */
+        .review-section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #e79e9e;
+            border-radius: 10px;
+        }
+
+        .review-cards-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            /*scroll-behavior: smooth;  Optional: adds smooth scrolling effect */
+        }
+
+        .review-card {
+            flex-shrink: 0;
+            width: 300px;
+            margin-right: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .review-header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .review-header h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .review-header p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .review-content {
+            padding: 10px;
+        }
+
+        .scroll-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .scroll-controls button {
+            background-color: #fff;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .scroll-controls button:focus {
+            outline: none;
+        }
+
+        .scroll-left {
+            margin-right: 10px;
+        }
+
+        /* Optional: hide horizontal scrollbar */
+        .review-cards-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .review-section {
+            background-color: #f7f7f7;
+            padding: 50px 0;
+        }
+
+        .review-cards-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-x: scroll;
+            scroll-behavior: auto;
+            margin: 0 auto;
+            padding: 0 20px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .review-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+            width: 300px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .review-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .review-card p {
+            margin: 0;
+        }
+
+        .scroll-button {
+            background-color: #0077c2;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .scroll-button:hover {
+            background-color: #0061a6;
+        }
+
+        .scroll-button:focus {
+            outline: none;
+        }
+
+        .scroll-button.scroll-left {
+            left: 0;
+        }
+
+        .scroll-button.scroll-right {
+            right: 0;
+        }
+
+        .review-cards-container.grabbing {
+            cursor: grabbing;
+        }
+
+        .review-cards-container::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+            background-color: #f7f7f7;
+        }
+
+        .review-cards-container::-webkit-scrollbar-thumb {
+            background-color: #0077c2;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .review-card {
+                width: 200px;
+            }
+
+            .scroll-button {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .review-card {
+                width: 150px;
+                min-height: 150px;
+                font-size: 14px;
+            }
+
+            .scroll-button {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .review-section {
+            background-color: #f38181;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+        }
+
+        .review-cards-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .review-card {
+            background-color: white;
+            margin-right: 20px;
+            padding: 20px;
+            min-width: 400px;
+            max-width: 600px;
+            /* scroll-snap-align: center; */
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .review-header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .review-details h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #3F3F3F;
+        }
+
+        .review-details p {
+            margin: 0;
+            font-size: 14px;
+            color: #707070;
+        }
+
+        .review-content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555555;
+        }
+
+        .scroll-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .scroll-controls button {
+            background-color: #3ce7d6;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-controls button:hover {
+            transform: scale(1.2);
+        }
+
+        .scroll-controls .scroll-right {
+            margin-left: auto;
+        }
+
+        ::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #E74C3C;
+            border-radius: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .review-card {
+                min-width: 300px;
+                max-width: 500px;
+            }
+        }
+
+        .review-card.grabbed {
+            animation: pull-up 0.9s ease-in forwards;
+            cursor: grabbing;
+            transform: translate(0, -10px) scale(1.1) rotate(-0deg);
+        }
+
+        /* CUSTOMER REVIEW CSS ENDS /HERE  */
+        /* CONTACT US CSS STARTS HERE  */
+        .contact-us,
+        .contact-us a {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            /* width: 100%; */
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            height: fit-content;
+            text-align: center;
+            align-items: center;
+            /* padding-left: 20px; */
+        }
+
+        .contact-container {
+            padding: 2vw;
+        }
+
+        .contact-h3 {
+            font-size: 2rem;
+        }
+
+        .contact-info-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .contact-info-text-written {
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .contact-location {
+            margin-right: 30px;
+        }
+
+        .contact-form button {
+            margin: 0 auto;
+            display: block;
+        }
+
+        #name,
+        #email,
+        #message,
+        #ehtesham-email-input {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            width: 95%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #contact-submit-btn,
+        #ehtesham-email-input-submit-button {
+            padding: 5px;
+            background-color: white;
+            color: black;
+            font-size: 1.3rem;
+            cursor: pointer;
+            border: 2px solid red;
+            border-radius: 12px;
+            margin-top: 5px;
+        }
+
+        #contact-submit-btn:hover,
+        #ehtesham-email-input-submit-button:hover {
+            box-shadow: 2px 2px 20px 2px rgb(228, 159, 159);
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        @media(max-width:600px) {
+            .contact-h3 {
+                font-size: 5.8vw;
+            }
+
+            .contact-p,
+            .copyright,
+            .footer-links a,
+            .myrights {
+                font-size: 3.6vw;
+            }
+
+            #name,
+            #email,
+            #message,
+            #contact-submit-btn,
+            #ehtesham-email-input-submit-button,
+            #ehtesham-email-input {
+                font-size: 3.1vw;
+            }
+        }
+
+        @media(max-width:850px) {
+
+            /* .contact-info-text-written{
+    display: flex;
+    flex-direction: row;
+  } */
+            .contact-info-text {
+                flex-direction: column;
+            }
+
+            .contact-h3 {
+                font-size: 4.8vw;
+            }
+
+            .contact-p,
+            .copyright,
+            .footer-links a,
+            .myrights {
+                font-size: 2.9vw;
+            }
+
+            #name,
+            #email,
+            #message,
+            #contact-submit-btn,
+            #ehtesham-email-input-submit-button,
+            #ehtesham-email-input {
+                font-size: 2.5vw;
+            }
+        }
+
+        @media(min-width:1220px) {
+            .contact-h3 {
+                font-size: 2.8vw;
+            }
+
+            .contact-p,
+            .copyright,
+            .footer-links a,
+            .myrights {
+                font-size: 1.8vw;
+            }
+
+            #name,
+            #email,
+            #message,
+            #contact-submit-btn,
+            #ehtesham-email-input-submit-button,
+            #ehtesham-email-input {
+                font-size: 1.5vw;
+            }
+        }
+
+        /* CONTACT US CSS ENDS HERE  */
+        /* FOOTER SECTION CSS STARTS HERE  */
+        .footer,
+        .footer a {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            /* width: 100%; */
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            height: fit-content;
+            text-align: center;
+            align-items: center;
+            /* padding-left: 20px; */
+        }
+
+        .footer {
+            box-shadow: 2px 2px 20px 2px rgb(0, 0, 0);
+            margin-top: 5px;
+        }
+
+        .footer-pt1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-container {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer-links a {
+            margin-right: 25px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            /* text-shadow: 2px 2px 2px rgb(0, 0, 0); */
+            text-decoration: none;
+            position: relative;
+        }
+
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transition: width 0.9s ease;
+        }
+
+        .footer-links a:hover::after {
+            width: 100%;
+        }
+
+        .footer-links a:hover {
+            color: rgb(38, 0, 255);
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-right: 5vw;
+        }
+
+        .myrights a {
+            color: red;
+            font-size: 120%;
+            text-shadow: 2px 5px 5px rgb(132, 137, 231);
+            font-weight: bold;
+        }
+
+        .myrights a:hover {
+            color: rgb(212, 0, 255);
+            font-size: 125%;
+            text-shadow: 2px 2px 5px rgb(218, 154, 125);
+            font-weight: bolder;
+        }
+
+        @media(max-width:1000px) {
+            .footer-pt1 {
+                flex-direction: column;
+                margin: 10px 0;
+            }
+
+            .copyright {
+                margin: 15px 0;
+            }
+        }
+
+        /* FOOTER SECTION CSS ENDS HERE  */
+        /* BACK TO TOP BUTTON CSS HERE  */
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 25px 1px red;
+            background-color: #4CAF50;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            z-index: 9999;
+        }
+
+        @media(max-width:800px) {
+            #back-to-top {
+                font-size: 4vw;
+            }
+        }
+
+        @media(max-width:1500px) {
+            #back-to-top {
+                font-size: 5vw;
+            }
+        }
+
+        @media(max-width:2000px) {
+            #back-to-top {
+                font-size: 3vw;
+            }
+        }
+
+        @media(min-width:2000px) {
+            #back-to-top {
+                font-size: 2.3vw;
+            }
+        }
+
+        /* BACK TO TOP BUTTON CSS ENDS HERE  */
+        /* PROFILE SECTION CSS STARTS HERE  */
+        .my-profile {
+            width: 100vw;
+            height: auto;
+            background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk_VkmsXTHra6DIeWrKC89uxkOnK4hCAvoC7FWBsNsigob_T1OvH--4hUKogjPYWuE1rpeGYGPQuce_Co4EM5oNDva7HWC82EFNDzewj-MPos2sSEeLV0MZrGMLymKYJlRbcaroU_1cZ2DgE4yQFi2LfaByitr2Tz0jEFVe1cDRqSFFUMllp_DTV88/s1280/wood-gba650fac1_1280.jpg);
+            border-radius: 10px;
+            box-shadow: 3px 3px 20px 2px black;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+        }
+
+        .profile-image {
+            align-items: center;
+            margin: auto;
+            margin-left: 2vw;
+        }
+
+        .profile-container img {
+            border-radius: 50%;
+            width: 30vw;
+            cursor: pointer;
+            height: 30vw;
+            border: 2px solid black;
+        }
+
+        .profile-container img:hover {
+            box-shadow: 2px 2px 20px 2px red;
+            width: 31vw;
+            height: 31vw;
+        }
+
+        .profile-text-container {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            background-color: rgba(246, 255, 0, 0.287);
+            /* padding: 8px; */
+            /* margin-left:20px; */
+        }
+
+        .profile-text-container a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .profile-text-container a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        @media(min-width:550px) {
+            .profile-text-container {
+                padding: auto;
+                font-size: 2.5vw;
+                margin: auto;
+                margin-left: 20px;
+            }
+        }
+
+        @media(max-width:550px) {
+            .profile-text-container {
+                padding: auto;
+                align-items: center;
+                font-size: 3.5vw;
+                margin: auto;
+                margin-left: 15px;
+            }
+        }
+
+        #profile-btn {
+            color: red;
+        }
+
+        #profile-btn:hover {
+            color: rgb(255, 0, 255);
+        }
+
+        /* PROFILE SECTION CSS ENDS HERE  */
+    </style>
+</head>
+
+<body>
+    <!-- HEADER SECTION STARTS HERE  -->
+    <header>
+        <nav>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="small-screen-menu">
+                <a href="#" class="logo-small">Mum's Kitchen</a>
+                <ul>
+                    <a href="#Home" class="logo">Mum's Kitchen</a>
+                    <li> <a href="#Home" class="options">Home</a></li>
+                    <li><a href="#about-us" class="options">About</a></li>
+                    <li><a href="#main-menu" class="options">Menu</a></li>
+                    <li><a href="#team" class="options">Our Team</a></li>
+                    <li><a href="#contact" class="options">Contact</a></li>
+                    <li><a href="#Find_us" class="options">Find Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- HEEADER SECTION ENDS HERE -->
+    <!-- IMAGE SLIDER STARTS HERE  -->
+    <section id="Home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="slider-image" src="https://source.unsplash.com/random/3840x2160/?food">
+                <div class="text-animated">
+                    <h1 id="header">Welcome to Mum's Kitchen</h1>
+                    <p id="paragraph">Indulge in the comforting flavors of home-cooked meals made with love, just like
+                        Mum used to
+                        make.</p>
+                    <button id="button"><a class="slider-button" href="#about-us">Learn More</a></button>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img class="slider-image" src="https://source.unsplash.com/random/3840x2160/?Indianfood">
+                <div class="text-animated">
+                    <h1 id="header"> Savor the Taste of Tradition</h1>
+                    <p id="paragraph">Our recipes have been passed down through generations, bringing you authentic and
+                        delicious
+                        dishes from all over the world.</p>
+                    <button id="button"><a class="slider-button" href="#about-us">Learn More</a></button>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img class="slider-image" src="https://source.unsplash.com/random/3840x2160/?veg">
+                <div class="text-animated">
+                    <h1 id="header">Come Home to Mum's Kitchen</h1>
+                    <p id="paragraph">Our cozy atmosphere and friendly staff will make you feel right at home, while our
+                        mouthwatering menu will leave you satisfied and happy.</p>
+                    <button id="button"><a class="slider-button" href="#about-us">Learn More</a></button>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <!-- IMAGE SLIDER ENDS HERE  -->
+    <!-- ABOUT US STARTS HERE  -->
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="animate__animated" data-animation="fadeInUp">About Us</h2>
+                    <p class="animate__animated" data-animation="fadeInUp">Mum's Kitchen was founded in 2010 by Jane
+                        Smith, a passionate home cook who wanted to share her love of comfort food with the world. With
+                        the help of her daughter, Sarah, Jane opened the first Mum's Kitchen restaurant in downtown San
+                        Francisco. </p>
+                    <p class="animate__animated" data-animation="fadeInUp">Since then, Mum's Kitchen has expanded to
+                        multiple locations across the country, but our commitment to serving delicious, homemade meals
+                        remains the same. We pride ourselves on using fresh, locally-sourced ingredients and creating
+                        dishes that remind you of home.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://source.unsplash.com/random/500x350/?food" alt="Mum's Kitchen"
+                        class="img-fluid animate__animated" data-animation="fadeInRight">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT US ENDS HERE  -->
+    <!-- OUR CORE VALUES STARTS HERE  -->
+    <section class="core-values-">
+        <h2>Our Core Values</h2>
+    </section>
+    <section class="core-values">
+        <div class="value">
+            <i class="fas fa-utensils"></i>
+            <h3>Fresh and locally sourced ingredients</h3>
+            <p>We believe that using fresh, locally sourced ingredients is not only better for our customers' health,
+                but it
+                also supports our community and helps reduce our carbon footprint.</p>
+        </div>
+        <div class="value">
+            <i class="fas fa-wine-glass-alt"></i>
+            <h3>Extensive selection of premium wines</h3>
+            <p>We offer an extensive selection of premium wines from around the world to complement our menu and enhance
+                our
+                customers' dining experience.</p>
+        </div>
+        <div class="value">
+            <i class="fas fa-people-carry"></i>
+            <h3>Attentive and personalized service</h3>
+            <p>We strive to provide attentive and personalized service to each of our customers, making them feel
+                welcomed and
+                valued.</p>
+        </div>
+        <div class="value">
+            <i class="fas fa-money-bill-wave"></i>
+            <h3>Affordable prices without compromising quality</h3>
+            <p>We believe that our customers should not have to choose between quality and affordability. That's why we
+                offer
+                delicious food and drinks at reasonable prices.</p>
+        </div>
+    </section>
+    <!-- OUR CORE VALUES ENDS HERE  -->
+    <!-- MENU SECTION STARTS HERE / -->
+    <section class="main-menu" id="main-menu">
+        <section class="menu">
+            <div class="container">
+                <section class="core-values-">
+                    <h2>Our Menu</h2>
+                </section>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?burger" alt="Menu item image">
+                        <h3>Burgers</h3>
+                        <p>Our delicious burgers are made with fresh, locally sourced ingredients.</p>
+                        <button id="check-more-btn" data-section="menu-items-1" class="check-more-btn">Check
+                            More</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?pizza" alt="Menu item image">
+                        <h3>Pizzas</h3>
+                        <p>Our pizzas are hand-tossed and made to order, with a variety of toppings to choose from.</p>
+                        <button id="check-more-btn" data-section="menu-items-2" class="check-more-btn">Check
+                            More</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?taco" alt="Menu item image">
+                        <h3>Tacos</h3>
+                        <p>Our tacos are served on warm, soft tortillas and filled with your choice of meat or veggies.
+                        </p>
+                        <button id="check-more-btn" data-section="menu-items-3" class="check-more-btn">Check
+                            More</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?sushi" alt="Menu item image">
+                        <h3>Sushi</h3>
+                        <p>Our sushi is made with the freshest fish and highest quality ingredients</p>
+                        <button id="check-more-btn" data-section="menu-items-4" class="check-more-btn">Check
+                            More</button>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?burger" alt="Menu item image">
+                        <h3>Burgers</h3>
+                        <p>Our delicious burgers are made with fresh, locally sourced ingredients.</p>
+                        <button id="check-more-btn" data-section="menu-items-1" class="check-more-btn">Check
+                            More</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?pizza" alt="Menu item image">
+                        <h3>Pizzas</h3>
+                        <p>Our pizzas are hand-tossed and made to order, with a variety of toppings to choose from.</p>
+                        <button id="check-more-btn" data-section="menu-items-2" class="check-more-btn">Check
+                            More</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?taco" alt="Menu item image">
+                        <h3>Tacos</h3>
+                        <p>Our tacos are served on warm, soft tortillas and filled with your choice of meat or veggies.
+                        </p>
+                        <button id="check-more-btn" data-section="menu-items-3" class="check-more-btn">Check
+                            More</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?sushi" alt="Menu item image">
+                        <h3>Sushi</h3>
+                        <p>Our sushi is made with the freshest fish and highest quality ingredients</p>
+                        <button id="check-more-btn" data-section="menu-items-4" class="check-more-btn">Check
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu-items-1" style="display: none;" class="more-menu-items">
+            <div class="container">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?burger" alt="Menu item image">
+                        <h3>Classic Burger</h3>
+                        <p>Our classic burger is topped with lettuce, tomato, and a special sauce.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?burger" alt="Menu item image">
+                        <h3>Cheeseburger</h3>
+                        <p>Our cheeseburger is topped with melted cheddar cheese, lettuce, tomato, and a special sauce.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?burger" alt="Menu item image">
+                        <h3>Classic Burger</h3>
+                        <p>Our classic burger is topped with lettuce, tomato, and a special sauce.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?burger" alt="Menu item image">
+                        <h3>Cheeseburger</h3>
+                        <p>Our cheeseburger is topped with melted cheddar cheese, lettuce, tomato, and a special sauce.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu-items-2" style="display: none;" class="more-menu-items">
+            <div class="container">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?pizza" alt="Menu item image">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Our pepperoni pizza is topped with spicy pepperoni, mozzarella cheese, and tomato sauce.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?pizza" alt="Menu item image">
+                        <h3>Margherita Pizza</h3>
+                        <p>Our Margherita pizza is topped with fresh mozzarella, basil, and tomato sauce.</p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?pizza" alt="Menu item image">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Our pepperoni pizza is topped with spicy pepperoni, mozzarella cheese, and tomato sauce.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?pizza" alt="Menu item image">
+                        <h3>Margherita Pizza</h3>
+                        <p>Our Margherita pizza is topped with fresh mozzarella, basil, and tomato sauce.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu-items-3" style="display: none;" class="more-menu-items">
+            <div class="container">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?taco" alt="Menu item image">
+                        <h3>Beef Taco</h3>
+                        <p>Our beef taco is served with seasoned ground beef, lettuce, cheese, and salsa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?taco" alt="Menu item image">
+                        <h3>Vegetarian Taco</h3>
+                        <p>Our vegetarian taco is served with grilled veggies, black beans, cheese, and salsa.</p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?taco" alt="Menu item image">
+                        <h3>Beef Taco</h3>
+                        <p>Our beef taco is served with seasoned ground beef, lettuce, cheese, and salsa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?taco" alt="Menu item image">
+                        <h3>Vegetarian Taco</h3>
+                        <p>Our vegetarian taco is served with grilled veggies, black beans, cheese, and salsa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu-items-4" style="display: none;" class="more-menu-items">
+            <div class="container">
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?sushi" alt="Menu item image">
+                        <h3>California Roll</h3>
+                        <p>Our California roll is filled with crab meat, avocado, cucumber, and topped with tobiko
+                            (flying fish
+                            roe).</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?sushi" alt="Menu item image">
+                        <h3>Spicy Tuna Roll</h3>
+                        <p>Our Spicy Tuna roll is filled with spicy tuna, cucumber, and avocado, and topped with spicy
+                            mayo and
+                            scallions.</p>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?sushi" alt="Menu item image">
+                        <h3>California Roll</h3>
+                        <p>Our California roll is filled with crab meat, avocado, cucumber, and topped with tobiko
+                            (flying fish
+                            roe).</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://source.unsplash.com/300x200/?sushi" alt="Menu item image">
+                        <h3>Spicy Tuna Roll</h3>
+                        <p>Our Spicy Tuna roll is filled with spicy tuna, cucumber, and avocado, and topped with spicy
+                            mayo and
+                            scallions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- MENU SECTION Ends HERE  -->
+    <!-- MEET OUR TEAM STARTS HERE  -->
+    <section class="core-values-">
+        <h2>Meet Our Team</h2>
+    </section>
+    <section id="team">
+        <div class="gallery">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://source.unsplash.com/random/280x280/?man" alt="Team Member 1">
+                    <div class="card-details">
+                        <h3>John Doe</h3>
+                        <p>Head Chef</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="card">
+                <div class="card-image">
+                    <img src="https://source.unsplash.com/random/280x280/?employee" alt="Team Member 1">
+                    <div class="card-details">
+                        <h3>John Doe</h3>
+                        <p>Head Chef</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://source.unsplash.com/random/280x280/?girl" alt="Team Member 1">
+                    <div class="card-details">
+                        <h3>John Doe</h3>
+                        <p>Head Chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://source.unsplash.com/random/280x280/?lady" alt="Team Member 1">
+                    <div class="card-details">
+                        <h3>John Doe</h3>
+                        <p>Head Chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://source.unsplash.com/random/280x280/?employee" alt="Team Member 1">
+                    <div class="card-details">
+                        <h3>John Doe</h3>
+                        <p>Head Chef</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MEET OUR TEAM ENDS HERE  -->
+    <!-- CUSTOMER REVIEW STARTS HERE  -->
+    <section class="core-values-">
+        <h2>Customer Reviews</h2>
+    </section>
+    <div class="review-section">
+        <div class="review-cards-container">
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Anjali Gupta</h3>
+                        <p>5 stars - May 4, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>Amazing food and great service! Highly recommend the paneer butter masala and the garlic naan.
+                    </p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Sanjay Sharma</h3>
+                        <p>4 stars - June 10, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>The food was good but the service was a bit slow. Still a nice experience overall.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Kavya Patel</h3>
+                        <p>3 stars - July 1, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>The atmosphere was nice but the food wasn't anything special. Average experience.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Rahul Singh</h3>
+                        <p>4 stars - August 15, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>Delicious food and friendly staff. The biryani was especially good.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Shreya Shah</h3>
+                        <p>5 stars - September 30, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>Outstanding food and service. Highly recommend the tandoori chicken and the dal makhani.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Vikram Chatterjee</h3>
+                        <p>3 stars - October 10, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>The food was good but the service was a bit slow. Still a nice experience overall.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian-man" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Shubham Sharma</h3>
+                        <p>5 stars - May 4, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>Amazing food and great service! Highly recommend the chicken tikka and the gulab jamun.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian-woman" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Priya Singh</h3>
+                        <p>4 stars - June 10, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>The food was good but the service was a bit slow. Still a nice experience overall.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian-man" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Amit Kumar</h3>
+                        <p>3 stars - July 1, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>The atmosphere was nice but the food wasn't anything special. Average experience.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian-woman" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Komal Patel</h3>
+                        <p>5 stars - August 18, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>One of the best dining experiences I've had in a while. The biryani was fantastic!</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://source.unsplash.com/random/100x100/?indian-man" alt="Profile Picture">
+                    <div class="review-details">
+                        <h3>Arnav Gupta</h3>
+                        <p>4 stars - September 5, 2022</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>Good food and decent service. Prices are a bit on the higher side.</p>
+                </div>
+            </div>
+            <!-- add more review cards as needed -->
+        </div>
+        <div class="scroll-controls">
+            <button class="scroll-left">◀</button>
+            <button class="scroll-right">▶</button>
+        </div>
+    </div>
+    <!-- CUSTOMER REVIEW ENDS HERE  -->
+    <!-- SUBSCRIBE TO OUR NEWS LETTER STARTS HERE  -->
+    <section class="ehtesham-Subscribe">
+        <div class="ehtesham-sub-container">
+            <div class="ehtesham-message-container">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="ehtesham-svg-for-subscribe">
+                    <path
+                        d="M20.25 3H3.75C2.78 3 2 3.78 2 4.75v14.5c0 .97.78 1.75 1.75 1.75h16.5c.97 0 1.75-.78 1.75-1.75V4.75c0-.97-.78-1.75-1.75-1.75zM12 12.87L3.47 6.38h17.06L12 12.87zM3.75 5.5h16.5c.13 0 .25.12.25.25L12 13.13 3.5 5.75c0-.13.12-.25.25-.25zm16.5 13H3.75c-.13 0-.25-.12-.25-.25v-10l8.34 6.41c.16.12.34.19.53.19s.37-.07.53-.19L20 8.25v10c0 .13-.12.25-.25.25z" />
+                </svg>
+                <h2 class="ehtesham-message">Subscribe to Our Newsletter</h2>
+            </div>
+            <div class="ehtesham-email-input-button">
+                <form>
+                    <input type="email" id="ehtesham-email-input" name="email-input" placeholder="Email Address"
+                        required>
+                    <button type="submit" id="ehtesham-email-input-submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- SUBSCRIBE TO OUR NEWS LETTER ENDS here -->
+    <!-- CONTACT STARTS HERE  -->
+    <section class="core-values-">
+        <h2>Contact Us</h2>
+    </section>
+    <section class="contact-us" id="contact">
+        <div class="contact-container">
+            <div class="contact-info-text">
+                <div class="contact-info-text-written">
+                    <div class="contact-location">
+                        <h3 class="contact-h3" class="contact-h3">Location</h3>
+                        <p class="contact-p">123 Main Street</p>
+                        <p class="contact-p">Anytown, USA 12345</p>
+                    </div>
+                    <div class="contact-info">
+                        <h3 class="contact-h3" class="contact-h3">Contact Info</h3>
+                        <p class="contact-p"><a href="tel:(555)555-5555">Phone: (555) 555-5555</a></p>
+                        <p class="contact-p"><a href="mailto:info@restaurant.com">Email: info@restaurant.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+                        <textarea name="message" id="message" placeholder="Your Message to us" minlength="20"
+                            required></textarea>
+                        <button type="submit" id="contact-submit-btn" style="display: block;">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT ENDS HERE  -->
+    <!-- FIND US STARTS HERE  -->
+    <section class="core-values-" id="Find_us">
+        <h2>Find Us</h2>
+    </section>
+    <iframe style="width:100%;"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3505.668418442475!2d77.1025!3d28.7041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce31cf9d9f125%3A0x46e70a6a36056ee!2sDelhi%2C%20India!5e0!3m2!1sen!2sus!4v1652111444495!5m2!1sen!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-- FIND US ENDS HERE  -->
+    <!-- FOOTER SECTION STARTS HERE  -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-pt1">
+                <div class="copyright">
+                    <p>&copy; 2023 Mum's Kitchen. All rights reserved.</p>
+                </div>
+                <div class="footer-links"><a href="#">Terms Of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Accessibility Statement</a>
+                </div>
+            </div>
+            <hr style="width: 100%;margin-top: 10px; margin-bottom: 10px;">
+            <div class="myrights">
+                <p>Designed and Created by <button id="profile-btn" data-section="menu-items-99"
+                        class="check-more-btn">Md Ehtesham</button></p>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER SECTION ENDS HERE  -->
+    <!-- BACK TO TOP BUTTON  -->
+    <button id="back-to-top">^</button>
+    <!-- BACK TO TOP BUTTON  -->
+    <section class="my-profile" id="menu-items-99" style="display: none;">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMz4ErqHm-uAyOVW_G1lHhjTGr2vDa6tenliwyjyYcHElOe5626jHNaLuqaWh3ECLLyGI4QnARZPR7mSsIWquwunaj4qQ8FECOeCoZdXfmOT12wT-n5TgrpNWPS_bDsfN4RlQrKH8TsJmwAkxOZ7vq0leHpX0yjpTZhLmKoYmrOWwpNDA5_3ogQylW/s2660/img.jpg"
+                    alt="Md_Ehtesham">
+            </div>
+            <div class="profile-text-container">
+                <p>Hey There! This is Ehtesham Here.</p>
+                <p>For Freelancing or job Offers</p>
+                <p>You can contact me here</p>
+                <a href="mailto:ehteshamansariadn@gmail.com">Mail Me : ehteshamansariadn@gmail.com</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // BACK TO TOP BUTTON SCRIPT HERE 
+        const backToTopButton = document.getElementById("back-to-top");
+        window.addEventListener("scroll", scrollFunction);
+        function scrollFunction() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+        backToTopButton.addEventListener("click", backToTop);
+        function backToTop() {
+            const scrollDuration = 1100; // duration in milliseconds
+            const scrollHeight = window.scrollY;
+            const scrollStep = Math.PI / (scrollDuration / 15);
+            const cosParameter = scrollHeight / 2;
+            let scrollCount = 0;
+            let scrollMargin;
+            function animateScroll() {
+                scrollCount++;
+                scrollMargin = cosParameter - cosParameter * Math.cos(scrollCount * scrollStep);
+                window.scrollTo(0, (scrollHeight - scrollMargin));
+                if (scrollCount < (scrollDuration / 15)) {
+                    window.requestAnimationFrame(animateScroll);
+                }
+            }
+            window.requestAnimationFrame(animateScroll);
+        }
+    </script>
+    <script>
+        // CUSTOMER REVIEW SCRIPT HERE 
+        const scrollLeftButton = document.querySelector('.scroll-left');
+        const scrollRightButton = document.querySelector('.scroll-right');
+        const reviewCardsContainer = document.querySelector('.review-cards-container');
+        const reviewCards = document.querySelectorAll('.review-card');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        // Scroll left when left button is clicked
+        scrollLeftButton.addEventListener('click', () => {
+            scrollReviewCards(-300);
+        });
+        // Scroll right when right button is clicked
+        scrollRightButton.addEventListener('click', () => {
+            scrollReviewCards(300);
+        });
+        // Scroll left or right when user swipes with mouse cursor
+        reviewCardsContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - reviewCardsContainer.offsetLeft;
+            scrollLeft = reviewCardsContainer.scrollLeft;
+            reviewCardsContainer.classList.add('grabbing');
+        });
+        reviewCardsContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+            reviewCardsContainer.classList.remove('grabbing');
+        });
+        reviewCardsContainer.addEventListener('mouseup', () => {
+            isDown = false;
+            reviewCardsContainer.classList.remove('grabbing');
+        });
+        reviewCardsContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - reviewCardsContainer.offsetLeft;
+            const walk = x - startX;
+            reviewCardsContainer.scrollLeft = scrollLeft - walk;
+        });
+        reviewCards.forEach((card) => {
+            card.addEventListener("mousedown", () => {
+                card.classList.add("grabbed");
+            });
+            card.addEventListener("mouseup", () => {
+                card.classList.remove("grabbed");
+            });
+            card.addEventListener("mouseleave", () => {
+                card.classList.remove("grabbed");
+            });
+        });
+        // Add grab cursor to review cards on hover
+        reviewCards.forEach((card) => {
+            card.addEventListener('mouseenter', () => {
+                card.style.cursor = 'grab';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.cursor = 'auto';
+            });
+            card.addEventListener('mousedown', () => {
+                card.style.cursor = 'grabbing';
+            });
+            card.addEventListener('mouseup', () => {
+                card.style.cursor = 'grab';
+            });
+        });
+        function scrollReviewCards(amount) {
+            reviewCardsContainer.scrollBy({ left: amount, behavior: 'smooth' });
+        }
+    </script>
+    <script>
+        // MENU SECTION SCRIPT 
+        const toggleButtons = document.querySelectorAll('.check-more-btn');
+        let currentSectionId = null;
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const sectionId = button.dataset.section;
+                const section = document.getElementById(sectionId);
+                if (currentSectionId === sectionId) {
+                    section.style.display = 'none';
+                    currentSectionId = null;
+                } else {
+                    if (currentSectionId !== null) {
+                        const currentSection = document.getElementById(currentSectionId);
+                        currentSection.style.display = 'none';
+                    }
+                    section.style.display = 'flex'; // or any other display property you want
+                    section.scrollIntoView({ behavior: 'smooth' });
+                    currentSectionId = sectionId;
+                }
+            });
+        });
+    </script>
+    <script>
+        // ABOUT US SCRIPT 
+        // Animate elements when the user scrolls to the section
+        const ourStory = document.querySelector('#about-us');
+        const ourStoryElements = ourStory.querySelectorAll('.animate__animated');
+        function animateOurStoryElements() {
+            ourStoryElements.forEach((element) => {
+                const animationClass = element.getAttribute('data-animation');
+                element.classList.add('animate__' + animationClass);
+            });
+        }
+        function removeOurStoryElementsAnimation() {
+            ourStoryElements.forEach((element) => {
+                const animationClass = element.getAttribute('data-animation');
+                element.classList.remove('animate__' + animationClass);
+            });
+        }
+        function handleScroll() {
+            const sectionPosition = ourStory.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (sectionPosition < windowHeight && sectionPosition > -ourStory.clientHeight) {
+                animateOurStoryElements();
+            } else {
+                removeOurStoryElementsAnimation();
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+    </script>
+    <script>
+        // Script for HEADER NAVBAR
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('ul');
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+    <script>
+        // image slider script 
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        // image slider text animation script 
+        const header = document.getElementById("header");
+        const paragraph = document.getElementById("paragraph");
+        const button = document.getElementById("button");
+        header.classList.add("animated");
+        paragraph.classList.add("animated");
+        button.classList.add("animated");
+    </script>
+    <script>
+        // MEET OUT TEAM SCRIPT HERE 
+        const gallery = document.querySelector('.gallery');
+        gallery.addEventListener('click', (event) => {
+            const cardImage = event.target.closest('.card-image');
+            if (cardImage) {
+                const name = cardImage.nextElementSibling.querySelector('h3').textContent;
+                const position = cardImage.nextElementSibling.querySelector('p').textContent;
+                const popup = document.createElement('div');
+                popup.classList.add('popup');
+                popup.innerHTML = `
+      <div class="popup-content">
+        <img src="${cardImage.querySelector('img').src}" alt="${name}">
+        <h3>${name}</h3>
+        <p>${position}</p>
+        <button class="close-button">Close</button>
+      </div>
+      <div class="popup-overlay"></div>
+    `;
+                document.body.appendChild(popup);
+                const closeButton = popup.querySelector('.close-button');
+                closeButton.addEventListener('click', () => {
+                    popup.remove();
+                });
+            }
+        });
+    </script>
+    <script>
+        // Famous products script here 
+        var TrandingSlider = new Swiper('.tranding-slider', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+</body>
+
+</html>
